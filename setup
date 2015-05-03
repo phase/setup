@@ -16,11 +16,13 @@ cd C:
 
 echo "Installing Notepad++..."
 cd "Program Files (x86)/"
-mkdir -p "Notepad++"
+mkdir -p Notepad++
+cd Notepad++
 wget http://notepad-plus-plus.org/repository/6.x/6.7.7/npp.6.7.7.bin.zip
 unzip npp.6.7.7.bin.zip -d Notepad++
 rm npp.6.7.7.bin.zip
 export PATH="$PATH;C:\Program Files (x86)\Notepad++"
+cd C:
 
 echo "Installing Python..."
 wget http://www.python.org/ftp/python/2.7.9/Python-2.7.9.tgz
@@ -31,3 +33,11 @@ make
 sudo make install
 export PATH=$PATH;C:\Python-2.7.9\
 cd C:
+
+echo "Installing Strawberry Perl..."
+mkdir -p Perl
+cd Perl
+wget http://strawberryperl.com/download/5.20.2.1/strawberry-perl-5.20.2.1-64bit-portable.zip
+upzip strawberry-perl-5.20.2.1-64bit-portable.zip
+rm strawberry-perl-5.20.2.1-64bit-portable.zip
+export PATH=$PATH;C:\Perl\
