@@ -41,3 +41,11 @@ wget http://strawberryperl.com/download/5.20.2.1/strawberry-perl-5.20.2.1-64bit-
 upzip strawberry-perl-5.20.2.1-64bit-portable.zip
 rm strawberry-perl-5.20.2.1-64bit-portable.zip
 export PATH=$PATH;C:\Perl\
+cd C:
+
+echo "Installing Java..."
+mkdir -p Java && cd Java
+wget http://download.oracle.com/otn-pub/java/jdk/8u45-b15/jdk-8u45-windows-i586.exe
+./jdk-8u45-windows-i586.exe
+read -p "Hit [Enter] once you've gone through the Java installation."
+cd C:
