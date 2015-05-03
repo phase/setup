@@ -20,6 +20,7 @@ mkdir -p "Notepad++"
 wget http://notepad-plus-plus.org/repository/6.x/6.7.7/npp.6.7.7.bin.zip
 unzip npp.6.7.7.bin.zip -d Notepad++
 rm npp.6.7.7.bin.zip
+export PATH="$PATH;C:\Program Files (x86)\Notepad++"
 
 echo "Installing Python..."
 wget http://www.python.org/ftp/python/2.7.9/Python-2.7.9.tgz
@@ -28,5 +29,5 @@ cd Python-2.7.9
 ./configure
 make
 sudo make install
-export PATH=$PATH:C:\Python-2.7.9\
+export PATH=$PATH;C:\Python-2.7.9\
 cd C:
