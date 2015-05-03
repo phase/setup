@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-echo "setup::main"
+colors.sh #Set up colors
+echo "${GREEN}setup::main"
 
 read -p "What is your Git Name?" name
 git config user.name "$name"
@@ -10,3 +11,14 @@ read -p "What is your Git Email?" email
 git config user.email $email
 GIT_AUTHOR_EMAIL=$email
 GIT_COMMIT_EMAIL=$email
+
+echo "Installing Python..."
+cd C:
+wget http://www.python.org/ftp/python/2.7.9/Python-2.7.9.tgz
+tar -xzf Python-2.7.9.tgz
+cd Python-2.7.9
+./configure
+make
+sudo make install
+export PATH=$PATH:C:\Python-2.7.9\
+cd C:
