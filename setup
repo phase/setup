@@ -32,6 +32,14 @@ cd Python-2.7.9
 make
 sudo make install
 export PATH=$PATH;C:\Python-2.7.9\
+
+echo "Installing pip..."
+wget https://bootstrap.pypa.io/get-pip.py
+python get-pip.py
+
+echo "Installing pip packages..."
+pip isntall thefuck
+alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 cd C:
 
 echo "Installing Strawberry Perl..."
